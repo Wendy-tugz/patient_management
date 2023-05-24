@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patientsignup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+
+
+        <ImageView
+            android:id="@+id/profilepic"
+            android:src="@drawable/ic_person_outline_24"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:id="@+id/personaltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PERSONAL INFORMATION INPUT"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/personalname"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_person_24"
+                android:hint="Enter your full names"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/personalid"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_badge_24"
+                android:hint="Enter your ID  number"
+                android:inputType="number"
+                android:maxLength="6"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/personalnumber"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_phone_24"
+                android:hint="Enter your phone number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/personalEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_mail_outline_24"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        <Spinner-->
+<!--            android:id="@+id/insuranceSpinner"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:drawableStart="@drawable/ic_card_24"-->
+<!--            android:popupBackground="#fff"-->
+<!--            android:entries="@array/Insurance"-->
+<!--            android:layout_marginStart="9dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/insuarancename"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_card_24"
+                android:hint="Enter Insuarance company"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/maritalstatus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_person_24"
+                android:hint="Marital Status"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_age_24"
+                android:hint="Enter Your Age"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/kids"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_children_24"
+                android:hint="Number of children"
+                android:inputType="number"
+                android:maxLength="3"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/allergies"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_sick_24"
+                android:hint="Allergies If Any"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/medication"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/ic_meds_24"
+                android:hint="State current Medication"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#000">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kinnumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableStart="@drawable/ic_number2_24"
+            android:hint="Next of Kin phone number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Now"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/buttons_background"/>
+
+    </LinearLayout>
+
+</ScrollView>

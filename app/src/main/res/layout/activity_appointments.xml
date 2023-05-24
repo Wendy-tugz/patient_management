@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".appointments">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark Your Date"
+        android:textAlignment="center"
+        android:textColor="#FF000000"
+        android:textSize="23sp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/appfullname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="50dp"
+            android:drawableStart="@drawable/ic_person_24"
+            android:hint="Full names"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="#000">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/appnumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_phone_24"
+            android:hint="Enter phone number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_calen">
+
+        <CalendarView
+            android:id="@+id/calenderview"
+            android:layout_width="match_parent"
+            android:layout_height="310dp">
+
+        </CalendarView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="5dp"
+        android:inputType="time"
+        android:text="Select Time"
+        android:textAlignment="center"/>
+
+
+    <Button
+        android:id="@+id/buttontime"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="150dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+
+    <Button
+        android:id="@+id/bookButton"
+        android:text="SAVE MY DATE"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="125dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

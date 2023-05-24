@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="full_names">Full Names :</string>
+    <string name="email">Email :</string>
+    <string name="phone_number">Phone Number :</string>
+    <string name="age">Age :</string>
+    <string name="marital_status">Marital Status :</string>
+    <string name="number_of_children">Number of children :</string>
+    <string name="insuarance_used">Insuarance Used :</string>
+    <string name="id_number">ID Number :</string>
+    <string name="allergies">Allergies :</string>
+    <string name="medication">Medication :</string>
+    <string name="next_of_kin_phone">Next of Kin\'s Phone:</string>
+</resources>
